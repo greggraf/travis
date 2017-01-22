@@ -74,6 +74,12 @@ ul.nav,
 	.works li {
 		background-image: none !important;
 	}
+
+	h1 {
+		font-size: 2em;
+	}
+
+
 }
 
 @media screen and (min-width: 680px) {
