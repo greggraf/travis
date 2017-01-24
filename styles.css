@@ -4,10 +4,7 @@ html {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto; 
   padding: 0 .5em;
-  max-width: 960px;
 }
 
 h1 {
@@ -27,51 +24,51 @@ ul.nav,
 	display: inline;
 }
 
-.nav li:after {
+.nav li:last-child:before {
 	content: ' | ';
 	padding: 0 .8em;
 }
 
-.nav li:last-child:after {
-	content: '';
+.works li {
+	margin-bottom: 2em;
 }
 
-.works ul {	
-	color: #eee;
+.container,
+.works h2 {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto; 
 }
 
 .works h3,
-.works p,
-.works li div {
-  margin: 0;
+.works p {
+	font-size: 1em;  
+	display: inline;
 }
 
-.works li {
-	position: relative;
-	margin: 0 0 .5em 0;
-	padding: 0;
+.works p:before {
+	content: ' | ';
+	padding: 0 .4em;
 }
 
-.works li div {
-	position: absolute;
-  bottom: 0;
-  right: 0;
-	z-index: 10;
-	width: 70%;
-	background-color: #666;
-	padding: .5em;
-}
 
 .works img {
   width: auto ;
   max-width: 100% ;
   height: auto;
   display:block;
-  visibility: none;
+  visibility: visible;
 }
 
+
+.works .canvas {
+  width: auto ;
+}
+
+
 @media screen and (max-width: 600px) {
-	.works li {
+
+	.works .canvas {
 		background-image: none !important;
 	}
 
@@ -79,17 +76,12 @@ ul.nav,
 		font-size: 2.6em;
 	}
 
-
 }
 
-@media screen and (min-width: 680px) {
 
-	.works li div {
-		width: 50%;
-		margin: .5em;
-	}	
+@media screen and (min-width: 600px) {
 
-	.works li {
+	.works .canvas {
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: contain;
@@ -103,13 +95,6 @@ ul.nav,
 
 }
 
-@media screen and (min-width: 900px) {
-
-	.works li div {
-		width: 25%;
-	}	
-
-}
 
 @media screen and (min-width: 1200px) {
 
@@ -117,12 +102,7 @@ ul.nav,
  	  max-width: none;
  	  margin: 0 1em;
 	}
-
-	.works h2 {
- 	  max-width: 960px;
-	  margin-left: auto;
-  	margin-right: auto; 
-	}
+	
 }
 
 
