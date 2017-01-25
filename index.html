@@ -24,10 +24,20 @@
 		
 	</div>  
 
-  <div  class="container works">
-  	<h2>works</h2>
+  <div  class="container">
+  
+		<div class="mast">
 
-		<div class="display" id="js-display"></div>
+			<h2>works</h2>
+			
+			<div class="desc" id="js-desc"></div>
+
+
+		</div>
+	</div>
+
+  <div  class="container works">
+			<div class="display" id="js-display"></div>
 
 		<div class="strip" id="js-thumbnails">
 			<ul>
@@ -134,18 +144,19 @@ console.log("debug")
 
   	var thumbnails = document.getElementById("js-thumbnails");
   	var display = document.getElementById("js-display");
+  	var desc = document.getElementById("js-desc");
 
   	function viewImage ( e ) {
   		
   		console.log("debug")
   		
   		var newImage = e.target.getAttribute("style");
-  		var newDescription = e.target.parentNode.getElementsByClassName("desc")[0].outerHTML;
+  		var newDescription = e.target.parentNode.getElementsByClassName("desc")[0].innerHTML;
   		
   		if (newImage) {
 	  		console.log(e.target)
   			display.setAttribute("style", newImage)
-  			display.innerHTML=newDescription;
+  			desc.innerHTML=newDescription;
 			}
 			
   	}
