@@ -9,6 +9,7 @@ html {
 
 h1 {
 	font-size: 3em;
+	width: 16em;
 	margin: 0;
 	text-transform: lowercase;
 }
@@ -51,7 +52,6 @@ ul.nav,
 	padding: 0 .4em;
 }
 
-
 .works img {
   width: auto ;
   max-width: 100% ;
@@ -60,15 +60,18 @@ ul.nav,
   visibility: visible;
 }
 
-
-.works .canvas {
+.works .thumnail {
   width: auto ;
+}
+
+.works .display {
+  display: none ;
 }
 
 
 @media screen and (max-width: 600px) {
 
-	.works .canvas {
+	.works .thumbnail {
 		background-image: none !important;
 	}
 
@@ -81,7 +84,8 @@ ul.nav,
 
 @media screen and (min-width: 600px) {
 
-	.works .canvas {
+	.works .display,
+	.works .thumbnail {
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: contain;
@@ -95,6 +99,68 @@ ul.nav,
 
 }
 
+@media screen and (min-width: 600px) {
+
+	body:target .mast {
+		height: 2.4em;
+	}
+
+	body:target .works .display {
+		display: block;
+		height: 74vh;
+		width: 100%;
+		margin-top: -1.4em;
+		text-align: right;
+		
+	}
+		
+	body:target .works img,
+	body:target .works .thumbnail,
+	body:target .works ul {
+		height: 14vh;	
+		width: auto;
+	}
+
+	body:target .works .strip {
+		width: 100%;
+		height: 18vh;	
+		overflow: auto;
+	}
+
+	body:target .works .thumbnail,
+	body:target .works ul {
+		display: inline-block;
+		width: -webkit-max-content;
+		width: -moz-max-content;
+		width: max-content;		
+	}
+
+	body:target .works li {
+		display: inline-block;
+		border: 1px solid #eee;
+		padding: .2em;
+		margin: 0;
+	}
+	
+	body:target .mast .nav {
+		display: inline-block;
+		padding-top: .4em;
+	}
+	
+	body:target .mast h1 {
+		display: inline-block;
+		vertical-align: top;
+	}		
+	body:target .works .desc {
+		display: none;
+	}
+
+	body:target .display  .desc {
+		display: block;
+		margin-top: -1.4em;
+	}
+	
+}
 
 @media screen and (min-width: 1200px) {
 
@@ -104,5 +170,3 @@ ul.nav,
 	}
 	
 }
-
-

@@ -10,120 +10,151 @@
   <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
   <link rel="stylesheet" href="styles.css">
 
-<body>
+<body id="poc">
 	<div class="container">
 	
+	<div class="mast">
 		<h1>Travis L. Willis</h1>
 	
 		<ul class="nav">
 			<li>contact</li>
 			<li>about</li>
 		</ul>
+	</div>
 		
 	</div>  
 
   <div  class="container works">
   	<h2>works</h2>
 
-		<ul>
+		<div class="display" id="js-display"></div>
+
+		<div class="strip" id="js-thumbnails">
+			<ul>
 		
-			<li>
-					<div class="canvas" style="background-image: url('images/beaubourg_final.jpg')">
-						<img src="images/sm/beaubourg_final.jpg" />
-					</div>	
-					<div>
-						<h3>Beaubourg</h3>
-						<p>60x48in. Oil on Canvas. 2016</p>
-					</div>									
-			</li>
+				<li>
+						<div id="js-first-image"  class="thumbnail" style="background-image: url('images/beaubourg_final.jpg')">
+							<img src="images/sm/beaubourg_final.jpg" />
+						</div>	
+						<div class="desc">
+							<h3>Beaubourg</h3>
+							<p>60x48in. Oil on canvas. 2016</p>
+						</div>									
+				</li>
 			
-			<li>
-					<div class="canvas" style="background-image: url('images/lungarno_diaz.jpg')">
-						<img src="images/sm/lungarno_diaz.jpg" />
-					</div>
-					<div>
-						<h3>Lungarno Diaz</h3>
-						<p>6x6 </p>
-					</div>
-			</li>
+				<li>
+						<div class="thumbnail" style="background-image: url('images/lungarno_diaz.jpg')">
+							<img src="images/sm/lungarno_diaz.jpg" />
+						</div>
+						<div class="desc">
+							<h3>Lungarno Diaz</h3>
+							<p>6x6 </p>
+						</div>
+				</li>
 			
-			<li>
-					<div class="canvas" style="background-image: url('images/pine_de_plage.jpg')">
-						<img src="images/sm/pine_de_plage.jpg" />
-					</div>
-					<div>
-						<h3>Pine_de_Plage</h3>
-						<p>60x48in. Oil on Canvas. 2016</p>
-					</div>
-			</li>
+				<li>
+						<div class="thumbnail" style="background-image: url('images/pine_de_plage.jpg')">
+							<img src="images/sm/pine_de_plage.jpg" />
+						</div>
+						<div class="desc">
+							<h3>Pine_de_Plage</h3>
+							<p>60x48in. Oil on canvas. 2016</p>
+						</div>
+				</li>
 			
-			<li>
-					<div class="canvas" style="background-image: url('images/sample_2nd.jpg')">
-						<img src="images/sm/sample_2nd.jpg" />
-					</div>
-					<div>
-						<h3>Sample 2nd</h3>
-						<p>60x48in. Oil on Canvas. 2016</p>
-					</div>
-			</li>
+				<li>
+						<div class="thumbnail" style="background-image: url('images/sample_2nd.jpg')">
+							<img src="images/sm/sample_2nd.jpg" />
+						</div>
+						<div class="desc">
+							<h3>Sample 2nd</h3>
+							<p>60x48in. Oil on canvas. 2016</p>
+						</div>
+				</li>
 			
-			<li>
-					<div class="canvas" style="background-image: url('images/sample_ev.jpg')">
-						<img src="images/sm/sample_ev.jpg" />
-					</div>
-					<div>
-						<h3>Sample EV</h3>
-						<p>60x48in. Oil on Canvas. 2016</p>
-					</div>
-			</li>
+				<li>
+						<div class="thumbnail" style="background-image: url('images/sample_ev.jpg')">
+							<img src="images/sm/sample_ev.jpg" />
+						</div>
+						<div class="desc">
+							<h3>Sample EV</h3>
+							<p>60x48in. Oil on canvas. 2016</p>
+						</div>
+				</li>
 			
-			<li>
-					<div class="canvas" style="background-image: url('images/sample_pic.jpg')">
-						<img src="images/sm/sample_pic.jpg" />
-					</div>
-					<div>
-						<h3>Sample Pic</h3>
-						<p>60x48in. Oil on Canvas. 2016</p>
-					</div>
-			</li>
+				<li>
+						<div class="thumbnail" style="background-image: url('images/sample_pic.jpg')">
+							<img src="images/sm/sample_pic.jpg" />
+						</div>
+						<div class="desc">
+							<h3>Sample Pic</h3>
+							<p>60x48in. Oil on canvas. 2016</p>
+						</div>
+				</li>
 			
-			<li>
-					<div class="canvas" style="background-image: url('images/sample_rue.jpg')">
-						<img src="images/sm/sample_rue.jpg" />
-					</div>
-					<div>
-						<h3>Sample Rue</h3>
-						<p>60x48in. Oil on Canvas. 2016</p>
-					</div>
-			</li>		
+				<li>
+						<div class="thumbnail" style="background-image: url('images/sample_rue.jpg')">
+							<img src="images/sm/sample_rue.jpg" />
+						</div>
+						<div class="desc">
+							<h3>Sample Rue</h3>
+							<p>60x48in. Oil on canvas. 2016</p>
+						</div>
+				</li>		
 
-			<li>
-					<div class="canvas" style="background-image: url('images/sandbox.jpg')">
-						<img src="images/sm/sandbox.jpg" />
-					</div>
-					<div>
-						<h3>Sandbox</h3>
-						<p>60x48in. Oil on Canvas. 2016</p>
-					</div>
-			</li>					
+				<li>
+						<div class="thumbnail" style="background-image: url('images/sandbox.jpg')">
+							<img src="images/sm/sandbox.jpg" />
+						</div>
+						<div class="desc">
+							<h3>Sandbox</h3>
+							<p>60x48in. Oil on canvas. 2016</p>
+						</div>
+				</li>					
 
-			<li>
-					<div class="canvas" style="background-image: url('images/verena.jpg')">
-						<img src="images/sm/verena.jpg" />
-					</div>
-					<div>
-						<h3>Verena</h3>
-						<p>60x48in. Oil on Canvas. 2016</p>
-					</div>
-			</li>		
-			
+				<li>
+						<div class="thumbnail" style="background-image: url('images/verena.jpg')">
+							<img src="images/sm/verena.jpg" />
+						</div>
+						<div class="desc">
+							<h3>Verena</h3>
+							<p>60x48in. Oil on canvas. 2016</p>
+						</div>
+				</li>		
 
-																		
-		</ul>
+			</ul>
+		</div>
+		
 
   </div>
 
-  <script src="scripts.js">
+  <script>
+
+console.log("debug")
+
+  	var thumbnails = document.getElementById("js-thumbnails");
+  	var display = document.getElementById("js-display");
+
+  	function viewImage ( e ) {
+  		
+  		console.log("debug")
+  		
+  		var newImage = e.target.getAttribute("style");
+  		var newDescription = e.target.parentNode.getElementsByClassName("desc")[0].outerHTML;
+  		
+  		if (newImage) {
+	  		console.log(e.target)
+  			display.setAttribute("style", newImage)
+  			display.innerHTML=newDescription;
+			}
+			
+  	}
+  	
+  	viewImage({ target: document.getElementById("js-first-image")});
+  	thumbnails.addEventListener("click", viewImage, false);
+
+  	
+  	
   /**
     Questions:
      - contact, do we need it, do we want a form? do we want an email address there?
