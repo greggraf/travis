@@ -104,6 +104,10 @@ ul.nav,
 	background-color: #666;
 }
 
+.state-contact .nav-contact {
+	color: white;
+	background-color: #666;
+}
 
 @media screen and (max-width: 600px) {
 

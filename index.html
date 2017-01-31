@@ -170,7 +170,6 @@
 		(function () {
 	
 		function classify ( el ) {
-				console.log("classifying");
 				
 				function hasClass ( term ) {
 					var classes = el.className.split(" ");
@@ -221,7 +220,6 @@
 				el.addClass = addClass;
 				el.removeClass = removeClass;
 				el.toggleClass = toggleClass;
-								console.log("returning classifying");
 
 				return el;
 				
@@ -239,13 +237,10 @@
 
 			function viewImage ( e ) {
 
-				console.log("prevent")
 				if (e.preventDefault) {
 					e.preventDefault();
 				}
-			
-				console.log("debug")
-				
+							
 				var li = e.target;
 				
 				while (li.nodeName !== "LI" && li !== thumbnails) {
@@ -276,9 +271,19 @@
 				var el = classify(e.target);
 
 				if (el.hasClass("nav-about")) {
-					console.log(top.toggleClass("state-about"))
+					top.toggleClass("state-about");
 				} 
 
+				if (el.hasClass("nav-contact")) {
+				
+					function va(s) {
+						for (var i = s.length, o = ''; i > 0; i = i - 2, o += s[i]) { }
+						return o;
+					}				
+
+					document.location = va("m2o#c@.Ds^g2nVi.t.n?i%aSpSsci~l#llilwls`i@v!a@r!t1@stscsastsnsoscs:sostslsisasms");
+				} 
+				
 			}
 
 			thumbnails.addEventListener("click", viewImage, false);
