@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "normalize.css": "^5.0.0"
   },
   "devDependencies": {
     "browser-sync": "^2.18.6"
